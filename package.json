@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "test": "mocha",
-    "dist": "babel index.js > dist/slogger.js && uglifyjs dist/slogger.js > dist/slogger.min.js",
+    "dist": "babel index.js > dist/oh-my-console.js && uglifyjs dist/oh-my-console.js > dist/oh-my-console.min.js",
     "prepublish": "npm run test && npm run dist"
   },
   "repository": {
@@ -32,5 +32,5 @@
     "mocha": "^2.4.5",
     "uglifyjs": "^2.4.10"
   },
-  "homepage": "https://github.com/psfe/logger#readme"
+  "homepage": "https://github.com/psfe/oh-my-console#readme"
 }
