@@ -1,8 +1,8 @@
 # logger
 
 [![NPM version](https://img.shields.io/npm/v/oh-my-console.svg?style=flat)](https://www.npmjs.org/package/oh-my-console)
-[![Build Status](https://travis-ci.org/psfe/oh-my-console.svg?branch=master)](https://travis-ci.org/psfe/oh-my-console)
-[![Coverage Status](https://coveralls.io/repos/github/psfe/oh-my-console/badge.svg?branch=master)](https://coveralls.io/github/psfe/oh-my-console?branch=master)
+[![Build Status](https://travis-ci.org/psfe/oh-my-console.svg?branch=master&foo)](https://travis-ci.org/psfe/oh-my-console)
+[![Coverage Status](https://coveralls.io/repos/github/psfe/oh-my-console/badge.svg?branch=master&foo)](https://coveralls.io/github/psfe/oh-my-console?branch=master)
 [![Dependency manager](https://img.shields.io/david/psfe/oh-my-console.svg?style=flat)](https://david-dm.org/psfe/oh-my-console)
 
 ## Installation
@@ -12,13 +12,17 @@
 ```bash
 npm install oh-my-console
 ```
+
+The Demo can be found [here](demo/node).
  
 ### Browser
 
-```
+```html
 <script>window.DEBUG="main"</script>
 <script src="dist/logger.min.js"></script>
 ```
+
+The Demo can be found [here](demo/browser).
 
 ## Usage
 
