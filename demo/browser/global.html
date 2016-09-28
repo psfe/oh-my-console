@@ -3,7 +3,7 @@
 
 <head>
   <meta charset="UTF-8">
-  <title>S-Logger DEMO</title>
+  <title>Oh My Console: As a Global Object</title>
   <script src="../../dist/oh-my-console.min.js"></script>
 </head>
 
@@ -14,7 +14,7 @@
 
     console.log('Functional Test:');
 
-    var logger = Logger('functional-test');
+    var logger = OhMyConsole('functional-test');
     logger.log('some information');
     logger.info('some information');
     logger.warn('some information');
@@ -22,8 +22,8 @@
 
     console.log('\nDEBUG test:');
 
-    var mainlogger = Logger('main');
-    var sublogger = Logger('main:sub');
+    var mainlogger = OhMyConsole('main');
+    var sublogger = OhMyConsole('main:sub');
     mainlogger.debug('matches main');
     sublogger.debug('matches main, main:sub');
   </script>

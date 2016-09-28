@@ -21,8 +21,6 @@ Browser:
 npm install oh-my-console
 ```
 
-The Demo can be found [here](demo/node).
- 
 ### Browser
 
 ```html
@@ -30,9 +28,9 @@ The Demo can be found [here](demo/node).
 <script src="dist/oh-my-console.min.js"></script>
 ```
 
-The Demo can be found [here](demo/browser).
-
 ## Usage
+
+### Node.js
 
 ```javascript
 var logger = require('oh-my-console')('main:foo');
@@ -45,6 +43,42 @@ logger.debug('bar')
 // Output only when DEBUG equals "main" or "main:foo"
 // [<timestamp>][main:foo] bar
 ```
+
+A demo can be found [here](demo/node).
+ 
+### AMD
+
+[dist/oh-my-console](dist/oh-my-console.min.js) supports AMD envirenment,
+as long as loaded into your HTML:
+
+```javascript
+window.DEBUG = "main";
+require(['OhMyConsole'], function(Logger) {
+    var logger = Logger('main:sub');
+
+    logger.log('some information');
+    logger.error('there was an error');
+    logger.debug('matches DEBUG: main, main:sub');
+});
+```
+
+A demo can be found [here](demo/browser/amd.html).
+ 
+### Global Object for Browser
+
+[dist/oh-my-console](dist/oh-my-console.min.js) **will** export a
+`window.OhMyConsole` object if there's no `require` or `module` defined.
+
+```javascript
+window.DEBUG = "main";
+var logger = window.OhMyConsole('main:sub');
+
+logger.log('some information');
+logger.error('there was an error');
+logger.debug('matches DEBUG: main, main:sub');
+```
+
+A demo can be found [here](demo/browser/global.html).
 
 ## API
 

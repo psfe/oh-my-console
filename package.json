@@ -1,6 +1,6 @@
 {
   "name": "oh-my-console",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "A JavaScript Logger for Node.js and Browsers",
   "main": "index.js",
   "scripts": {

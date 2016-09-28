@@ -211,9 +211,15 @@
     }
 
     // CommonJS
-    if (typeof module !== 'undefined' && typeof module.exports !== 'undefined')
+    if (typeof module !== 'undefined' && typeof module.exports !== 'undefined') {
         module.exports = Logger;
+    }
     // Browser
-    else
-        window.Logger = Logger;
+    else if (typeof define === 'function' && define.amd) {
+        define('OhMyConsole', [], function() {
+            return Logger;
+        });
+    } else {
+        window.OhMyConsole = Logger;
+    }
 })();

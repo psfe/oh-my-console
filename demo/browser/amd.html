@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Oh My Console: As an AMD Module</title>
+  <script src="./require.min.js"></script>
+  <script src="../../dist/oh-my-console.min.js"></script>
+</head>
+
+<body>
+  <h2>See the Console</h2>
+  <script>
+    require(['OhMyConsole'], function(Logger) {
+      window.DEBUG = "main";
+
+      console.log('Functional Test:');
+
+      var logger = Logger('functional-test');
+      logger.log('some information');
+      logger.info('some information');
+      logger.warn('some information');
+      logger.error('there was an error');
+
+      console.log('\nDEBUG test:');
+
+      var mainlogger = Logger('main');
+      var sublogger = Logger('main:sub');
+      mainlogger.debug('matches main');
+      sublogger.debug('matches main, main:sub');
+    });
+  </script>
+</body>
+
+</html>
