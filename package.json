@@ -1,0 +1,35 @@
+{
+  "name": "slogger",
+  "version": "1.0.0",
+  "description": "A JavaScript Logger for Node.js and Browsers",
+  "main": "index.js",
+  "scripts": {
+    "test": "mocha",
+    "dist": "babel index.js > dist/slogger.js && uglifyjs dist/slogger.js > dist/slogger.min.js",
+    "prepublish": "npm run test && npm run dist"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/psfe/logger.git"
+  },
+  "keywords": [
+    "Log",
+    "PSFE",
+    "Browser",
+    "Node.js"
+  ],
+  "author": "harttle",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/psfe/logger/issues"
+  },
+  "devDependencies": {
+    "babel-cli": "^6.14.0",
+    "chai": "^3.5.0",
+    "coveralls": "^2.11.9",
+    "istanbul": "^0.4.3",
+    "mocha": "^2.4.5",
+    "uglifyjs": "^2.4.10"
+  },
+  "homepage": "https://github.com/psfe/logger#readme"
+}

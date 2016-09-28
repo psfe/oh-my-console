@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>S-Logger DEMO</title>
+  <script src="../../dist/slogger.min.js"></script>
+</head>
+
+<body>
+  <h2>See the Console</h2>
+  <script>
+    window.DEBUG = "main";
+
+    console.log('Functional Test:');
+
+    var logger = Logger('functional-test');
+    logger.log('some information');
+    logger.info('some information');
+    logger.warn('some information');
+    logger.error('there was an error');
+
+    console.log('\nDEBUG test:');
+
+    var mainlogger = Logger('main');
+    var sublogger = Logger('main:sub');
+    mainlogger.debug('matches main');
+    sublogger.debug('matches main, main:sub');
+  </script>
+</body>
+
+</html>
