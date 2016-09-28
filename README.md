@@ -1,16 +1,16 @@
 # logger
 
-[![NPM version](https://img.shields.io/npm/v/logger.svg?style=flat)](https://www.npmjs.org/package/logger)
-[![Build Status](https://travis-ci.org/psfe/logger.svg?branch=master)](https://travis-ci.org/psfe/logger)
-[![Coverage Status](https://coveralls.io/repos/github/psfe/logger/badge.svg?branch=master)](https://coveralls.io/github/psfe/logger?branch=master)
-[![Dependency manager](https://img.shields.io/david/psfe/logger.svg?style=flat)](https://david-dm.org/psfe/logger)
+[![NPM version](https://img.shields.io/npm/v/oh-my-console.svg?style=flat)](https://www.npmjs.org/package/oh-my-console)
+[![Build Status](https://travis-ci.org/psfe/oh-my-console.svg?branch=master)](https://travis-ci.org/psfe/oh-my-console)
+[![Coverage Status](https://coveralls.io/repos/github/psfe/oh-my-console/badge.svg?branch=master)](https://coveralls.io/github/psfe/oh-my-console?branch=master)
+[![Dependency manager](https://img.shields.io/david/psfe/oh-my-console.svg?style=flat)](https://david-dm.org/psfe/oh-my-console)
 
 ## Installation
 
 ### Node.js
 
 ```bash
-npm install psfe-logger
+npm install oh-my-console
 ```
  
 ### Browser
@@ -23,7 +23,7 @@ npm install psfe-logger
 ## Usage
 
 ```javascript
-var logger = require('psfe-logger')('main:foo');
+var logger = require('oh-my-console')('main:foo');
 
 logger.log('bar');
 // Output:
